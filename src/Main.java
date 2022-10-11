@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
 
-        int[] salesOfYear = {12, 4, 38, 17, 39, 4};
-        SalesManager sales = new SalesManager(salesOfYear);
+        int[] salesOfYear = {7, 6, 4, 8, 9, 1, 3, 5, 2};
+        TrimmedMean sales = new TrimmedMean(salesOfYear);
 
-        System.out.println(sales.max());
+        System.out.println(sales.trimmedMean());
 
     }
 }
