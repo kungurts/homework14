@@ -2,14 +2,14 @@ import java.util.Arrays;
 
 public class TrimmedMean {
 
-    protected int[] sales;
+    protected long[] sales;
 
-    public TrimmedMean(int[] sales) {
+    public TrimmedMean(long[] sales) {
         this.sales = sales;
     }
 
-    public int trimmedMean() {
-        int trimmed, sum;
+    public long trimmedMean() {
+        long trimmed, sum;
         Arrays.sort(sales);
         sum = Arrays.stream(sales).sum() - sales[0] - sales[sales.length-1];
         trimmed = sum / (sales.length - 2);
